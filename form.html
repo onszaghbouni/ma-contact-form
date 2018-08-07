@@ -1,0 +1,71 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<meta http-equiv="x-UA-compatible" content="ie=edge">
+	<title>contact form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+	<div class="container">
+	  <h1 class="brand"><span>Ons</span> Web Design</h1>
+	    <div class="wrapper animated bounceInleft">
+	    	<div class="company-info">
+	    	 <h3>Ons Web Design</h3>
+	    	 <ul>
+	    	 	<li><i class="fa fa-road"></i> 8 something street</li>
+	    	 	<li><i class="fa fa-phone"></i> (555) 555-5555</li>
+	    	 	<li><i class="fa fa-envelope"></i> test@Ons.test</li>
+	    	 </ul>
+	    	</div>
+		 <div class="contact">
+		 	<h3>E-mail US</h3>
+		 	<div class="alert">your message has been sent</div>
+		 	<form id="contactForm">
+		 		<p>
+		 			<label>Name</label>
+		 			<input type="text" name="name" id="name" required>
+		 		</p>
+		 		<p>
+		 			<label>Company</label>
+		 			<input type="text" name="company" id="company">
+		 		</p>
+		 		<p>
+		 			<label>Email Address</label>
+		 			<input type="text" name="email" id="email" required>
+		 		</p>
+		 		<p>
+		 			<label>Phone Number</label>
+		 			<input type="text" name="phone" id="phone" required>
+		 		</p>
+		 		<p class="full">
+		 			<label>Message</label>
+		 			<textarea name="message" rows="5" id="message"></textarea>
+		 		</p>
+		 		<p class="full" >
+		 			<input type="submit" name="submit" value="submit">
+		 		</p>
+		 	</form>
+		 </div>
+	</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCpAFDSBsSTIOo6rh7U6S7YlJpc0RjUKM0",
+    authDomain: "testofcheckpoint.firebaseapp.com",
+    databaseURL: "https://testofcheckpoint.firebaseio.com",
+    projectId: "testofcheckpoint",
+    storageBucket: "testofcheckpoint.appspot.com",
+    messagingSenderId: "764794946344"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/main.js"></script>
+</html>
